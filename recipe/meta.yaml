@@ -1,0 +1,43 @@
+{% set name = "qdarkstyle" %}
+{% set version = "2.7" %}
+{% set sha256 = "de7aba62119a839556afd7b3b962588410b6249cbcfcbd56e51e6e827264c38f" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  entry_points:
+    - qdarkstyle=qdarkstyle.__main__:main
+  noarch: "python"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - python >=3.6
+    - pip
+  run:
+    - python >=3.6
+    - helpdev >=0.6.2
+
+test:
+  imports:
+    - qdarkstyle
+    - qdarkstyle.utils
+  commands:
+    - python example/example.py --qt_from=pyqt5 --test
+    - python example/example.py --qt_from=pyqt5 --test --no_dark
+
+
+about:
+  home: "https://github.com/ColinDuquesnoy/QDarkStyleSheet"
+  license: "MIT"
+  license_family: "MIT"
+  license_file: LICENSE.md
+  summary: "A dark stylesheet for Python and Qt applications"
+
