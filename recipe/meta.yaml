@@ -1,4 +1,4 @@
-{% set name = "qdarkstyle" %}
+{% set name = "QDarkStyle" %}
 {% set version = "2.7" %}
 {% set sha256 = "de7aba62119a839556afd7b3b962588410b6249cbcfcbd56e51e6e827264c38f" %}
 
