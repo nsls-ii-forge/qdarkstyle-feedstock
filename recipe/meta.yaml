@@ -26,6 +26,8 @@ requirements:
     - helpdev >=0.6.2
 
 test:
+  source_files:
+    - example
   imports:
     - qdarkstyle
     - qdarkstyle.utils
