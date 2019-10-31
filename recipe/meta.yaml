@@ -27,15 +27,9 @@ requirements:
     - pyqt >=5
 
 test:
-  source_files:
-    - example
   imports:
     - qdarkstyle
     - qdarkstyle.utils
-  commands:
-    - python example/example.py --qt_from=pyqt5 --test
-    - python example/example.py --qt_from=pyqt5 --test --no_dark
-
 
 about:
   home: "https://github.com/ColinDuquesnoy/QDarkStyleSheet"
