@@ -15,7 +15,7 @@ build:
   entry_points:
     - qdarkstyle=qdarkstyle.__main__:main
   noarch: python
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -37,4 +37,3 @@ about:
   license_family: MIT
   license_file: LICENSE.md
   summary: A dark stylesheet for Python and Qt applications
-
