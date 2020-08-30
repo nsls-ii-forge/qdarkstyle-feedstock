@@ -35,5 +35,5 @@ about:
   home: https://github.com/ColinDuquesnoy/QDarkStyleSheet
   license: MIT
   license_family: MIT
-  license_file: LICENSE.md
+  license_file: LICENSE.rst
   summary: A dark stylesheet for Python and Qt applications
