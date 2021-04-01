@@ -25,6 +25,7 @@ requirements:
     - python >=3.6
     - helpdev >=0.6.2
     - pyqt >=5
+    - qtpy
 
 test:
   imports:
