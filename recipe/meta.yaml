@@ -26,6 +26,7 @@ requirements:
     - helpdev >=0.6.2
     - pyqt >=5
     - qtpy
+    - qtsass
 
 test:
   imports:
