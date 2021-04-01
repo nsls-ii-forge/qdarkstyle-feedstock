@@ -1,6 +1,6 @@
 {% set name = "QDarkStyle" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "6f139de44a7ce7ca0bcc29aad547b87e9195caa84d4cc770e7f52901675e7c76" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "03d169ad6f3b96efa32568d941a3c3e0bbf5ae4041c3cd695a736d5f7477a439" %}
 
 package:
   name: {{ name|lower }}
